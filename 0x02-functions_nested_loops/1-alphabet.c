@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * print_alphabet - utilizes on the _putchar function to print 
- * the alphabet a <F4> z 
+ * Description :print_alphabet - utilizes on the _putchar function to print a
+ *
+ * Return: Always 0 (Success)
 */
 
 int print_alphabet(void)
@@ -11,4 +12,6 @@ int print_alphabet(void)
 	for (ch = 'a'; ch <=  'z'; ch++)
 		_putchar(ch);
 	_putchar('\n');
+
+	return (0);
 }
