@@ -5,21 +5,26 @@
 /**
  * main - Entry point
  *
+ * Description: print 0, 1, -9
+ *
  * Return: Always 0 (Success)
- */
+*/
 
 int main(void)
 {
-	int d;
+	int digit = 0;
 
-	for (d = '0'; d <= '9'; d++)
+	while (digit <= 9)
 	{
-		putchar(d);
-		if (d != '9')
+		putchar(digit + 48);
+
+		if (digit != 9)
 		{
 			putchar(',');
-			putchar(' ');
+			putchar(',');
 		}
+
+		digit++;
 	}
 	putchar('\n');
 
